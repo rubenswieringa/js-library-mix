@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>mo money/mo problems</title>
+  <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= yield %>
+
+<%= javascript_include_tag 'require.min.js', :'data-main' => 'assets/init' %>
+<%#= javascript_include_tag "/assets/rivets.min.js" %>
+<%#= javascript_include_tag "application" %>
+
+</body>
+</html>
